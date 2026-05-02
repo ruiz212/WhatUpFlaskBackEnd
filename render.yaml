@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: whatsapp-flask-api
+    env: docker
+    region: oregon
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: FLASK_ENV
+        value: production
+      # - key: NODE_URL
+      #   value: "https://<tu-node-app>.onrender.com"
